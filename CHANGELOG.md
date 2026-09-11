@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+- README lists Android and iOS host permissions (none required).
+
 ## 1.0.0
 
 - Keep the screen on (reference-counted acquire / release)

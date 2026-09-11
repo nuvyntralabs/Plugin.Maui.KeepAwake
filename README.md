@@ -53,6 +53,16 @@ Resolve `IKeepAwake` from dependency injection, or use `KeepAwake.Current` after
 | **Page helper** | `KeepAwake.SetEnabled(page, true)` |
 | **Status** | `KeepAwake.IsActive` / `ActiveCount` |
 
+## Permissions
+
+### Android
+
+No extra `AndroidManifest.xml` permissions. The plugin uses `WindowManagerFlags.KeepScreenOn`, not a `WAKE_LOCK`.
+
+### iOS
+
+No extra `Info.plist` usage strings. The plugin sets `UIApplication.SharedApplication.IdleTimerDisabled`.
+
 ## Platform notes
 
 **Android** — `WindowManagerFlags.KeepScreenOn`.
@@ -83,7 +93,7 @@ dotnet build samples/Plugin.Maui.KeepAwake.Sample/Plugin.Maui.KeepAwake.Sample.c
 dotnet pack src/Plugin.Maui.KeepAwake/Plugin.Maui.KeepAwake.csproj -c Release -o artifacts
 ```
 
-The `.nupkg` is written to `artifacts/Plugin.Maui.KeepAwake.1.0.0.nupkg`. CI publishes to nuget.org and GitHub Packages.
+The `.nupkg` is written to `artifacts/Plugin.Maui.KeepAwake.1.0.1.nupkg`. CI publishes to nuget.org and GitHub Packages.
 
 ## License
 
