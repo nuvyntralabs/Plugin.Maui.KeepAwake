@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/Plugin.Maui.KeepAwake.Sample/Plugin.Maui.KeepAwake.Sample.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Plugin.Maui.KeepAwake/Plugin.Maui.KeepAwake.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Plugin.Maui.KeepAwake.Tests/Plugin.Maui.KeepAwake.Tests.csproj" />
+  </Folder>
+</Solution>

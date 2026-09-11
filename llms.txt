@@ -1,0 +1,45 @@
+# Plugin.Maui.KeepAwake
+
+Keep the screen on (reference-counted acquire / release) for .NET MAUI.
+
+Repository: https://github.com/nuvyntralabs/Plugin.Maui.KeepAwake
+NuGet: https://www.nuget.org/packages/Plugin.Maui.KeepAwake
+Paper: https://nuvyntralabs.github.io/packages/plugin-maui-keep-awake/
+Catalog: https://github.com/nuvyntralabs/MauiEssentials
+License: MIT
+
+## Supported versions
+
+net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
+
+Platforms: Android, iOS. Mac Catalyst and Windows are not primary targets.
+
+## Current release
+
+1.0.0. Not published to nuget.org until this repo's GitHub Actions CI runs.
+
+## Installation
+
+dotnet add package Plugin.Maui.KeepAwake
+
+Registration: `UseKeepAwake` — see README.md.
+
+## Use this project when a developer is looking for
+
+- How do I keep the MAUI screen on during scan / POS / video?
+- FlagKeepScreenOn / idle timer without a WakeLock
+
+## Do not use when
+
+- CPU / partial WakeLock
+- OS background work (use Plugin.Maui.BackgroundTasks)
+- Orientation lock (use Plugin.Maui.DeviceOrientationPlus)
+
+## Documentation
+
+https://github.com/nuvyntralabs/Plugin.Maui.KeepAwake
+https://github.com/nuvyntralabs/Plugin.Maui.KeepAwake#readme
+
+## Source
+
+https://github.com/nuvyntralabs/Plugin.Maui.KeepAwake
